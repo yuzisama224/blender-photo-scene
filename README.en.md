@@ -51,26 +51,11 @@ Provide known measurements, viewing distance, or a target project when relevant.
 | Validate and export | Save the project; validate the authored scene inside the export step; export registered items. |
 | Reimport and deliver | Read the GLB in a fresh Blender process; compare against the saved baseline, test movement, inspect appearance, and report results. |
 
-```mermaid
-flowchart TD
-    reference["Photograph and task scope"] --> preflight["Check environment"]
-    preflight --> missing{"Required dependency missing?"}
-    missing -->|"Yes"| approval{"Explain installation and ask permission"}
-    approval -->|"Approved"| install["Install and recheck"]
-    approval -->|"Deferred"| pause["Keep analysis and manifest; await dependencies"]
-    missing -->|"No"| connection["Confirm Blender MCP with a read-only query"]
-    install --> connection
-    connection --> manifest["Photo analysis and item manifest"]
-    manifest --> blockout["Camera matching and blockout"]
-    blockout --> modeling["Geometry, materials, and lighting"]
-    modeling --> preview["Overview and necessary representative details"]
-    preview --> saveScene["Save Blender project"]
-    saveScene --> exportScene["Validate during export; save report and GLB"]
-    exportScene --> roundtrip["GLB roundtrip and appearance check"]
-    roundtrip --> delivery["Deliver project, model, and evidence"]
-```
+![Environment and installation consent](docs/diagrams/environment.en.svg)
 
-The diagram shows the main delivery path. Within each stage, specific issues trigger corrections and checks of affected work. Export and roundtrip checks must pass before delivery. See the [production workflow](references/workflow.md) and [manifest contract](references/manifest.md).
+![Photo scene production and delivery](docs/diagrams/workflow.en.svg)
+
+The diagrams show environment setup and the main delivery path. Within each stage, specific issues trigger corrections and checks of affected work. Export and roundtrip checks must pass before delivery. See the [production workflow](references/workflow.md) and [manifest contract](references/manifest.md).
 
 ## Focused quality checks
 
@@ -85,6 +70,7 @@ Full logs and per-item data stay in files. Reports summarize conclusions, except
 | Path | Contents |
 | --- | --- |
 | [SKILL.md](SKILL.md) | Agent entry point and stage routing |
+| [docs/diagrams/](docs/diagrams/) | Editable Chinese and English SVG flowcharts |
 | [references/](references/) | Workflow, manifest, tool guide, and specialist modules |
 | [scripts/](scripts/) | Preflight, export, validation, and optional diagnostic tools |
 | [tests/](tests/) | Package and helper-script tests for maintenance |

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="565" viewBox="0 0 1040 565" role="img" aria-label="照片场景制作与交付">
+<title>照片场景制作与交付</title>
+<rect width="1040" height="565" rx="18" fill="#f8fafc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<text x="40" y="47" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="650" fill="#0f172a">
+<tspan x="40" dy="0">02  制作与交付</tspan>
+</text>
+<rect x="40" y="110" width="280" height="100" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="180.0" y="153.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="180.0" dy="0">1  照片分析</tspan>
+<tspan x="180.0" dy="27">物品清单与尺寸依据</tspan>
+</text>
+<rect x="380" y="110" width="280" height="100" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="520.0" y="153.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="520.0" dy="0">2  相机与灰模</tspan>
+<tspan x="520.0" dy="27">透视、比例与物品位置</tspan>
+</text>
+<rect x="720" y="110" width="280" height="100" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="860.0" y="153.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="860.0" dy="0">3  形体、材质与灯光</tspan>
+<tspan x="860.0" dy="27">完整物品与表面细节</tspan>
+</text>
+<rect x="720" y="295" width="280" height="100" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="860.0" y="338.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="860.0" dy="0">4  视觉确认</tspan>
+<tspan x="860.0" dy="27">总览与必要代表近景</tspan>
+</text>
+<rect x="380" y="295" width="280" height="100" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="520.0" y="338.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="520.0" dy="0">5  保存与导出</tspan>
+<tspan x="520.0" dy="27">一次验证、作者报告与 GLB</tspan>
+</text>
+<rect x="40" y="295" width="280" height="100" rx="12" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+<text x="180.0" y="338.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#0f172a">
+<tspan x="180.0" dy="0">6  回读与交付</tspan>
+<tspan x="180.0" dy="27">一次验证及导入外观确认</tspan>
+</text>
+<path d="M 320 160 H 379" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 660 160 H 719" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 860 210 V 294" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 720 345 H 661" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 380 345 H 321" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="40" y="457" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#475569">
+<tspan x="40" dy="0">阶段内按具体差距修正；复用有效证据，只补查受影响部分。</tspan>
+</text>
+<text x="40" y="488" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="500" fill="#475569">
+<tspan x="40" dy="0">交付内容改变后，更新导出与回读；两项通过后交付。</tspan>
+</text>
+<text x="40" y="533" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="600" fill="#0f766e">
+<tspan x="40" dy="0">.blend  +  .glb  +  构建脚本  +  预览  +  清单  +  验收记录</tspan>
+</text>
+</svg>

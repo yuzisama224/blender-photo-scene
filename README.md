@@ -50,24 +50,9 @@ Blender MCP 是需要单独连接的运行条件。本包通过实际只读查�
 
 ## 制作流程
 
-```mermaid
-flowchart TD
-    reference["参考照片与制作目标"] --> preflight["环境预检"]
-    preflight --> missing{"缺少必需依赖？"}
-    missing -->|"是"| approval{"说明安装方案并询问用户"}
-    approval -->|"同意"| install["安装并复查"]
-    approval -->|"暂缓"| pause["保留分析和清单，等待依赖"]
-    missing -->|"否"| connection["只读确认 Blender MCP"]
-    install --> connection
-    connection --> manifest["照片分析与物品清单"]
-    manifest --> blockout["相机匹配与空间灰模"]
-    blockout --> modeling["形体、材质与灯光"]
-    modeling --> preview["总览与必要代表近景"]
-    preview --> saveScene["保存 Blender 工程"]
-    saveScene --> exportScene["导出内验证、作者报告与 GLB"]
-    exportScene --> roundtrip["GLB 回读与外观确认"]
-    roundtrip --> delivery["交付工程、模型与证据"]
-```
+![环境与安装确认](docs/diagrams/environment.zh.svg)
+
+![照片场景制作与交付](docs/diagrams/workflow.zh.svg)
 
 图中展示主交付路径。阶段内按具体差距修正并复查；导出与回读通过后才进入交付。发现失败时，修正受影响内容并更新对应交付版本的证据。
 
@@ -115,6 +100,7 @@ flowchart TD
 blender-photo-scene/
 ├── SKILL.md                 技能入口
 ├── agents/openai.yaml       技能显示信息
+├── docs/diagrams/           可编辑的中英文 SVG 流程图
 ├── references/              制作流程、清单与按阶段读取的模块
 ├── scripts/                 预检、诊断、验证、渲染与导出工具
 ├── tests/                   工具测试
