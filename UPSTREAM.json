@@ -1,0 +1,442 @@
+{
+  "schema_version": 1,
+  "package": "blender-photo-scene",
+  "snapshot_date": "2026-09-05",
+  "provenance_policy": "每个引用固定到提交并记录原始文件校验值。许可全文原样保留；运行文档和辅助脚本以本包中的完整本地文件为准。",
+  "adaptation_policy": "十四个 arjun 领域模块与 Codex 执行约定为中文自包含参考。通用照片场景、清单身份、单件 MESH、独立变换、侧背底覆盖和导出回读由本包统一定义。知识按主入口条件加载。",
+  "sources": [
+    {
+      "id": "arjun",
+      "repository": "arjun988/blender-skills",
+      "repository_url": "https://github.com/arjun988/blender-skills",
+      "commit": "8f778d2405a214b508d4c7d80742be8e43acdd52",
+      "complete_source_archive_url": "https://github.com/arjun988/blender-skills/archive/8f778d2405a214b508d4c7d80742be8e43acdd52.tar.gz",
+      "license": {
+        "spdx": "MIT",
+        "source_path": "LICENSE",
+        "local_path": "licenses/arjun988-blender-skills-LICENSE",
+        "handling": "verbatim",
+        "sha256": "693a17a74eacc8ad849d248356fba7fab357b0bef5c94f783029033ab2d950d7"
+      },
+      "use": "制作阶段与十四个建模领域参考；中文适配本包的照片场景和单件 MESH 交付。",
+      "files": [
+        {
+          "local_path": "references/modules/modeling.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/blender-modeler/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/blender-modeler/SKILL.md",
+              "sha256": "00835b5d2281ae056e4bd4b167540a10c39ae95d9a9a4f12828ce875dce8c12c"
+            },
+            {
+              "path": ".claude/skills/blender-modeler/references/modifier-stack.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/blender-modeler/references/modifier-stack.md",
+              "sha256": "705b242c0c4f187ef76287a5048f7a28ea7f153c134ca48edcc015af796c900a"
+            }
+          ],
+          "adaptation": "保留按形体选构造、尺度、修改器和拓扑检查；明确列表求值方向，参数随实际尺度与目标效果确定。"
+        },
+        {
+          "local_path": "references/modules/archviz.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/archviz/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/archviz/SKILL.md",
+              "sha256": "3b74d2914d7ff31a017d1948fca6c746676f71b4ab80bc87c25c9a7aca1d28b8"
+            },
+            {
+              "path": ".claude/skills/archviz/references/archviz-camera.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/archviz/references/archviz-camera.md",
+              "sha256": "6c3697c0419fe740f653469cf9dd43bd303ae61bcc9f4c02402886fb1d021837"
+            },
+            {
+              "path": ".claude/skills/archviz/references/archviz-lighting.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/archviz/references/archviz-lighting.md",
+              "sha256": "96a6f30417469bebb2181fde5ed8bae122164d4a7884219dd8d0b8075f686fcb"
+            }
+          ],
+          "adaptation": "保留空间基准、建筑厚度和室内表面；照片证据决定布局与相机。"
+        },
+        {
+          "local_path": "references/modules/props.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/prop-artist/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/prop-artist/SKILL.md",
+              "sha256": "f8db44db9707474893cf265592242148cbe7b4a597eed1f017c25131fb2b91ff"
+            },
+            {
+              "path": ".claude/skills/prop-artist/references/everyday-prop-checklist.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/prop-artist/references/everyday-prop-checklist.md",
+              "sha256": "e62b07c0c62be963ba101bf1c91340204c750fc244a37f0a156618bc436920c6"
+            }
+          ],
+          "adaptation": "保留日常物件轮廓、支撑和材质逻辑；补入移动后可见表面与单件整理。"
+        },
+        {
+          "local_path": "references/modules/scene-assembly.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/scene-assembly/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/scene-assembly/SKILL.md",
+              "sha256": "9aad0ebdeac897304989b9a06efdaa566a76962ef9409e6e4076474dec23e34f"
+            },
+            {
+              "path": ".claude/skills/scene-assembly/references/linking-overrides.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/scene-assembly/references/linking-overrides.md",
+              "sha256": "dabce0052c44b45b530430577e857f012b5edb22824f04dddd37e8c7aaeff0c1"
+            }
+          ],
+          "adaptation": "保留集合、实例与局部修改；交付身份落在单件 MESH，对象可共享 data 并独立变换。"
+        },
+        {
+          "local_path": "references/modules/materials.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/materials/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/materials/SKILL.md",
+              "sha256": "fc86c8f2e292791a3bc4f238ae0f2120c52d61b393ef922c55860dd2b78e43b6"
+            },
+            {
+              "path": ".claude/skills/materials/references/surface-recipes.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/materials/references/surface-recipes.md",
+              "sha256": "ca3213fd8943042fc4f32c01912ba3c98e04fd836f074b05d6678f96ffa204e7"
+            },
+            {
+              "path": ".claude/skills/materials/references/procedural-patterns.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/materials/references/procedural-patterns.md",
+              "sha256": "e425b825109d850269192b5c6a856c33a422974b94b03c1bf2df256376edeb40"
+            }
+          ],
+          "adaptation": "保留 PBR 表面分类、材质复用和微表面；采用实际插槽发现及可随物件移动的表面坐标。"
+        },
+        {
+          "local_path": "references/modules/uv.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/uv-workflow/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/uv-workflow/SKILL.md",
+              "sha256": "1e55a08843199640cc9d6a957ff40f96d077c00d74d6e1d95b81da8adceaba8b"
+            },
+            {
+              "path": ".claude/skills/uv-workflow/references/texel-density.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/uv-workflow/references/texel-density.md",
+              "sha256": "3b0b6bcb6468f1f630496176fe28ecd128f1638028260ba6f546324ddf9f3dcf"
+            },
+            {
+              "path": ".claude/skills/uv-workflow/references/trim-sheets.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/uv-workflow/references/trim-sheets.md",
+              "sha256": "5b16006a6b4fe5107404ec404b9c27f9393613e2d6fdbdd63ab04dd2458b08e4"
+            }
+          ],
+          "adaptation": "保留展开、密度、打包和表面覆盖；按像素分配与物理尺寸说明密度，参数随交付用途确定。"
+        },
+        {
+          "local_path": "references/modules/texture.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/texture-workflow/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/texture-workflow/SKILL.md",
+              "sha256": "9f8b86bc7fb7350d3195c7a641fa6fc33e6350fbf1364ed55330ff8b04249a9b"
+            },
+            {
+              "path": ".claude/skills/texture-workflow/references/orm-packing.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/texture-workflow/references/orm-packing.md",
+              "sha256": "9b8b1cac124820d8d0fe0e6d4f610d55532caaffd446e6a3aed1a47f26eb5d6c"
+            },
+            {
+              "path": ".claude/skills/texture-workflow/references/bake-troubleshooting.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/texture-workflow/references/bake-troubleshooting.md",
+              "sha256": "13d12f59de2a70e76b02f6e611acd9582c283ba6d829cbe3fa513f361d04a026"
+            }
+          ],
+          "adaptation": "保留贴图语义、烘焙、图集和故障诊断；以目标渲染器定义通道与图像携带方式。"
+        },
+        {
+          "local_path": "references/modules/lighting.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/lighting/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/lighting/SKILL.md",
+              "sha256": "a9ad1a183a4294c3e87101b63d26303ea499cfe8edc25c3b9a4c73f5e7b34232"
+            }
+          ],
+          "adaptation": "保留光源类型、主光到环境的调整顺序；光照依据照片与可见结构。"
+        },
+        {
+          "local_path": "references/modules/camera.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/camera-cinematography/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/camera-cinematography/SKILL.md",
+              "sha256": "0838fe51a882af69b47d598b09ef3c921852e498a394d35b793d607826e43ece"
+            }
+          ],
+          "adaptation": "保留相机、视场、画幅与检查视角；细化为单张透视照片的空间与相机共同求解。"
+        },
+        {
+          "local_path": "references/modules/rendering.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/rendering/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/rendering/SKILL.md",
+              "sha256": "abf41a30b17a29cc09efcbecf9e163e7f0d30a2b5d6c2f2700acf85a788deff1"
+            },
+            {
+              "path": ".claude/skills/rendering/references/render-passes.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/rendering/references/render-passes.md",
+              "sha256": "3bd1590431349b76ccb82a3d3589779baa29b1426c42f900cca19c1332f1a313"
+            }
+          ],
+          "adaptation": "保留引擎选择、样本测试、色彩管理和诊断通道；区分整室照片相机与隔离物件视图。"
+        },
+        {
+          "local_path": "references/modules/export.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/export-pipeline/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/export-pipeline/SKILL.md",
+              "sha256": "5e754b14b0cad83a6a9fa939c64082be3b2358c74f4cdad637c8bd179d3314e1"
+            }
+          ],
+          "adaptation": "保留对象范围、尺度、轴向、材质与回读检查；统一接入本包清单和导出脚本。"
+        },
+        {
+          "local_path": "references/modules/qa.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/qa-review/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/qa-review/SKILL.md",
+              "sha256": "14bd366e4c7831973d67e74580ebfeafb1749ce1530ef64ba900d097ac38fce0"
+            }
+          ],
+          "adaptation": "保留实际图像证据、缺陷与修正复查；按用户目标分别验证匹配、结构、独立移动与回读。"
+        },
+        {
+          "local_path": "references/modules/geometry-nodes.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/geometry-nodes/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/geometry-nodes/SKILL.md",
+              "sha256": "f04add65d17201c3d58d09575fc1da7408e95e270b35614e66bf0928663196d9"
+            },
+            {
+              "path": ".claude/skills/geometry-nodes/references/building-generators.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/geometry-nodes/references/building-generators.md",
+              "sha256": "18fbd0a59cfb4fd6bc8b15e838699c389b8db48042145d211559839ea2f3ee83"
+            }
+          ],
+          "adaptation": "保留实例、曲线与模块构造；照片清单决定参数、布局和最终独立对象。"
+        },
+        {
+          "local_path": "references/modules/procedural.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": ".claude/skills/procedural-modeling/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/procedural-modeling/SKILL.md",
+              "sha256": "143556702f08e2bcab1d61dc38c0ee953bf90835483ebbaf1058c9e8c2364e03"
+            }
+          ],
+          "adaptation": "保留参数化、固定随机种子、边界检查和重建；生成范围按清单身份限定。"
+        },
+        {
+          "local_path": "references/workflow.md",
+          "handling": "adapted_workflow",
+          "source_files": [
+            {
+              "path": ".claude/skills/blender-director/SKILL.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/blender-director/SKILL.md",
+              "sha256": "ba10ae3243590f94fb114b6cb1e476f8f0510f0a99de100e8c14651d081bc008"
+            },
+            {
+              "path": ".claude/skills/references/reference-image-match.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/references/reference-image-match.md",
+              "sha256": "3d43bbb8d05c0219a965b033012995efa62d3f6b85fb25dbffe6bdd44f48aa14"
+            },
+            {
+              "path": ".claude/skills/references/reference-analysis-template.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/references/reference-analysis-template.md",
+              "sha256": "757ea985ff38840b2c734d44b4c6cdaed38840271a794b393c2a5e8e950f253c"
+            },
+            {
+              "path": ".claude/skills/references/visual-match-checklist.md",
+              "url": "https://github.com/arjun988/blender-skills/blob/8f778d2405a214b508d4c7d80742be8e43acdd52/.claude/skills/references/visual-match-checklist.md",
+              "sha256": "6b8e4431a718a314ae80cdb87cdec4b237f6a15b5d5debcbf088b8c685a31b79"
+            }
+          ],
+          "adaptation": "参考制作阶段、相机优先、逐轮图像检查；本包流程和清单定义照片场景的实际交付范围。"
+        }
+      ]
+    },
+    {
+      "id": "roble",
+      "repository": "RobLe3/cc-blender-skill",
+      "repository_url": "https://github.com/RobLe3/cc-blender-skill",
+      "commit": "11016c9a5847897491dde935c346571bd7548e3d",
+      "complete_source_archive_url": "https://github.com/RobLe3/cc-blender-skill/archive/11016c9a5847897491dde935c346571bd7548e3d.tar.gz",
+      "license": {
+        "spdx": "MIT",
+        "source_path": "LICENSE",
+        "local_path": "licenses/RobLe3-cc-blender-skill-LICENSE",
+        "handling": "verbatim",
+        "sha256": "53551803e298669de282d339c7e85ae64e6fbf370d07ca08105d8e0a2d2fbf3d"
+      },
+      "use": "具名区域遮罩与轮廓叠图的完整 Python 源码，经本地适配后随包提供。",
+      "files": [
+        {
+          "local_path": "scripts/seeded_part_masks.py",
+          "handling": "adapted_source",
+          "source_files": [
+            {
+              "path": "plugin/skills/source-part-segmentation/scripts/seeded_part_masks.py",
+              "url": "https://github.com/RobLe3/cc-blender-skill/blob/11016c9a5847897491dde935c346571bd7548e3d/plugin/skills/source-part-segmentation/scripts/seeded_part_masks.py",
+              "sha256": "92f4ebfd17bb8fb2486a6fff0973fae83ebf16b86fe6ee03ccec3de1bf2b1f5c"
+            }
+          ],
+          "adaptation": "保留具名 polygon/bbox 区域遮罩核心；完整源码随包提供，输入与空遮罩行为按本包验证要求适配。"
+        },
+        {
+          "local_path": "scripts/render_overlay_validator.py",
+          "handling": "adapted_source",
+          "source_files": [
+            {
+              "path": "plugin/skills/reference-analysis-validator/scripts/render_overlay_validator.py",
+              "url": "https://github.com/RobLe3/cc-blender-skill/blob/11016c9a5847897491dde935c346571bd7548e3d/plugin/skills/reference-analysis-validator/scripts/render_overlay_validator.py",
+              "sha256": "7fe26400c9c791850e2fe647986edf7edac75ee5c6f0c7350119365be1ab5777"
+            }
+          ],
+          "adaptation": "保留轮廓交并、边界、质心与叠图核心；使用相同尺寸的有效遮罩并移除可选 scikit-image 依赖。"
+        }
+      ]
+    },
+    {
+      "id": "ifbars",
+      "repository": "ifBars/blender-agent-studio",
+      "repository_url": "https://github.com/ifBars/blender-agent-studio",
+      "commit": "b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4",
+      "complete_source_archive_url": "https://github.com/ifBars/blender-agent-studio/archive/b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4.tar.gz",
+      "license": {
+        "spdx": "MIT",
+        "source_path": "LICENSE",
+        "local_path": "licenses/ifBars-blender-agent-studio-LICENSE",
+        "handling": "verbatim",
+        "sha256": "dc25474bd47c86e86e36f1a5b4cd42000c2ab5a2c5bfb09ec335787a8356e77b"
+      },
+      "use": "资产技术指标、单件视图证据和导出回读方法；完整 Python 源码经本地适配后随包提供。",
+      "files": [
+        {
+          "local_path": "scripts/inspect_asset.py",
+          "handling": "adapted_source",
+          "source_files": [
+            {
+              "path": "plugins/blender-agent-studio/skills/blender-asset-validation/scripts/inspect_asset.py",
+              "url": "https://github.com/ifBars/blender-agent-studio/blob/b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4/plugins/blender-agent-studio/skills/blender-asset-validation/scripts/inspect_asset.py",
+              "sha256": "0bc7a5d85b5d5fdd4ddea66184242814a6785e25958c3ba7440e17d159fbbd17"
+            }
+          ],
+          "adaptation": "保留通用求值网格、尺寸、材质和技术指标检查；源码按本包清单与静态场景范围精简。"
+        },
+        {
+          "local_path": "scripts/render_item_views.py",
+          "handling": "adapted_source",
+          "source_files": [
+            {
+              "path": "plugins/blender-agent-studio/skills/blender-asset-validation/scripts/render_evidence.py",
+              "url": "https://github.com/ifBars/blender-agent-studio/blob/b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4/plugins/blender-agent-studio/skills/blender-asset-validation/scripts/render_evidence.py",
+              "sha256": "81cc1fdc6967e5e518386f399ba35910b641258c341a54e39883464f626ad2a2"
+            }
+          ],
+          "adaptation": "按指定清单物件在隔离场景生成七视图；保留相机、照明与拼图核心，适配单件证据范围。"
+        },
+        {
+          "local_path": "references/modules/qa.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": "plugins/blender-agent-studio/skills/blender-asset-validation/SKILL.md",
+              "url": "https://github.com/ifBars/blender-agent-studio/blob/b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4/plugins/blender-agent-studio/skills/blender-asset-validation/SKILL.md",
+              "sha256": "22deb07033f097ad99cf85aa8631623c94b13f14b5a13bc6ccbea0c5fd152046"
+            },
+            {
+              "path": "plugins/blender-agent-studio/skills/blender-asset-validation/references/quality-gates.md",
+              "url": "https://github.com/ifBars/blender-agent-studio/blob/b1cefdd1bcc1b7bf40423259a5c6fa154e2259f4/plugins/blender-agent-studio/skills/blender-asset-validation/references/quality-gates.md",
+              "sha256": "2abcf35fd8a83de1105353793ff7f01bcd45e170f94ed9d41fc4d094c9b4f189"
+            }
+          ],
+          "adaptation": "采用技术指标、实际图像和新进程回读分别验收的原则；单件移动规则由本包定义。"
+        }
+      ]
+    },
+    {
+      "id": "cheshire",
+      "repository": "CheshireJCat/create-3d-model-skill",
+      "repository_url": "https://github.com/CheshireJCat/create-3d-model-skill",
+      "commit": "df175e38106687c6b872d0c88ca527d674ee5d2f",
+      "complete_source_archive_url": "https://github.com/CheshireJCat/create-3d-model-skill/archive/df175e38106687c6b872d0c88ca527d674ee5d2f.tar.gz",
+      "license": {
+        "spdx": "MIT",
+        "source_path": "LICENSE",
+        "local_path": "licenses/CheshireJCat-create-3d-model-skill-LICENSE",
+        "handling": "verbatim",
+        "sha256": "acecb0df48d3fc413bd87482acbbbefa26792f0acd1ae96c96b3c6a09b1ce451"
+      },
+      "use": "Codex 工具发现、相对路径解析、范围内编辑、图像查看与持久文件交付约定。",
+      "files": [
+        {
+          "local_path": "references/modules/execution.md",
+          "handling": "adapted_reference",
+          "source_files": [
+            {
+              "path": "skills/create-3d-model/SKILL.md",
+              "url": "https://github.com/CheshireJCat/create-3d-model-skill/blob/df175e38106687c6b872d0c88ca527d674ee5d2f/skills/create-3d-model/SKILL.md",
+              "sha256": "43a38568e14894039f41c23a51bd7ac85dc316f80605819c4b6ba041c8696e3e"
+            },
+            {
+              "path": "skills/create-3d-model/references/codex-integration.md",
+              "url": "https://github.com/CheshireJCat/create-3d-model-skill/blob/df175e38106687c6b872d0c88ca527d674ee5d2f/skills/create-3d-model/references/codex-integration.md",
+              "sha256": "99180f0c0d3e63626186397cad0ca65347a7da76a818146ed030f184f70a91ad"
+            },
+            {
+              "path": "skills/create-3d-model/references/modeling-patterns.md",
+              "url": "https://github.com/CheshireJCat/create-3d-model-skill/blob/df175e38106687c6b872d0c88ca527d674ee5d2f/skills/create-3d-model/references/modeling-patterns.md",
+              "sha256": "715b8453f99e81063b7e832ddd4263cfc77b1d201740f1d98e028c7729c8ab52"
+            }
+          ],
+          "adaptation": "中文收束为本包执行约定；按实际工具命名空间、包内路径和已授权场景范围执行。"
+        }
+      ]
+    }
+  ],
+  "original_implementation": [
+    {
+      "local_path": "scripts/preflight.py",
+      "purpose": "本包运行环境与 Blender 连接预检。"
+    },
+    {
+      "local_path": "scripts/verify_scene.py",
+      "purpose": "本包清单、对象身份、单件 MESH、独立变换与回读验证。"
+    },
+    {
+      "local_path": "scripts/export_scene.py",
+      "purpose": "按本包清单整理导出范围和便携交付。"
+    },
+    {
+      "local_path": "scripts/check_package.py",
+      "purpose": "本包结构、引用与来源记录检查。"
+    }
+  ]
+}

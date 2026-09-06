@@ -1,0 +1,6 @@
+interface:
+  display_name: "Blender 照片场景"
+  short_description: "把照片还原成精细可编辑场景，逐件验证小物品移动与模型导出"
+  default_prompt: "使用 $blender-photo-scene 按这张照片制作精细场景，让每件小物品可在 Blender 中独立移动，并交付工程与 GLB。"
+policy:
+  allow_implicit_invocation: true
