@@ -64,14 +64,13 @@ flowchart TD
     manifest --> blockout["Camera matching and blockout"]
     blockout --> modeling["Geometry, materials, and lighting"]
     modeling --> preview["Overview and necessary representative details"]
-    preview -->|"Specific issue"| modeling
-    preview -->|"Requirements met"| saveScene["Save Blender project"]
+    preview --> saveScene["Save Blender project"]
     saveScene --> exportScene["Validate during export; save report and GLB"]
     exportScene --> roundtrip["GLB roundtrip and appearance check"]
     roundtrip --> delivery["Deliver project, model, and evidence"]
 ```
 
-See the [production workflow](references/workflow.md) and [manifest contract](references/manifest.md). Failures trigger corrections and checks of affected work before progressing.
+The diagram shows the main delivery path. Within each stage, specific issues trigger corrections and checks of affected work. Export and roundtrip checks must pass before delivery. See the [production workflow](references/workflow.md) and [manifest contract](references/manifest.md).
 
 ## Focused quality checks
 

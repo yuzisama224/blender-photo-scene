@@ -63,14 +63,13 @@ flowchart TD
     manifest --> blockout["相机匹配与空间灰模"]
     blockout --> modeling["形体、材质与灯光"]
     modeling --> preview["总览与必要代表近景"]
-    preview -->|"有具体差距"| modeling
-    preview -->|"满足当前要求"| saveScene["保存 Blender 工程"]
+    preview --> saveScene["保存 Blender 工程"]
     saveScene --> exportScene["导出内验证、作者报告与 GLB"]
     exportScene --> roundtrip["GLB 回读与外观确认"]
     roundtrip --> delivery["交付工程、模型与证据"]
 ```
 
-图中的导出与回读步骤通过后才进入交付；发现失败时，修正受影响内容并更新对应交付版本的证据。
+图中展示主交付路径。阶段内按具体差距修正并复查；导出与回读通过后才进入交付。发现失败时，修正受影响内容并更新对应交付版本的证据。
 
 | 阶段 | 主要工作 | 推进依据 |
 |---|---|---|
